@@ -28,10 +28,12 @@ export const useTokenStore = defineStore('token-store', () => {
     }
     return false
   }
-  const removeAuth = () => {
+  const removeAuth = (returnUrl?: string) => {
+    console.log('returnUrl')
+    console.log(returnUrl)
     delete httpInstance.defaults.headers.common.Authorization
     store.remove('token')
-    router.push('/account/login')
+    router.push(returnUrl ? returnUrl : '/account/login')
   }
 
   return { token, setAuth, authFromLocal, removeAuth }

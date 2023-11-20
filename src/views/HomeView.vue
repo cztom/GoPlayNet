@@ -6,7 +6,7 @@ import HelloWorld from '@/components/HelloWorld.vue'
 <template>  
   <header>
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <HelloWorld msg="Hello, 我是首页!" />
 
       <nav>
         <RouterLink to="/">首页</RouterLink>
@@ -16,3 +16,6 @@ import HelloWorld from '@/components/HelloWorld.vue'
     </div>
   </header>
 </template>
+<style scoped lang="scss">
+a { margin-right: 10px;}
+</style>

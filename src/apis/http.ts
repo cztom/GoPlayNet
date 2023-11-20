@@ -17,14 +17,10 @@ httpInstance.defaults.baseURL = import.meta.env.VITE_BASEURL
 //配置响应拦截器
 export const $http = async (config: AxiosRequestConfig) => {
   const loadingInstance = ElLoading.service()
-  console.log(1)
   try {
     const axiosResponse = await httpInstance<ApiResponse>(config)
-    console.log(2)
-    console.log(axiosResponse)
     const apiResponse = axiosResponse.data
     if (!axiosResponse?.status) {
-      console.log(axiosResponse.status)
       let errTitle: string = 'Error'
       if (apiResponse.statusCode === 400) {
         errTitle = '错误'
@@ -49,9 +45,7 @@ export const $http = async (config: AxiosRequestConfig) => {
     }
     return apiResponse
   } catch (err) {
-    console.log(3)
     if (err instanceof AxiosError) {
-      console.log(err.response)
       if (err.response) {
         if (err.response.data.statusCode === 400) {
           ElMessage.error(err.response.data.message)

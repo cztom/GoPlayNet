@@ -20,6 +20,7 @@
         <div class="btns">
           <el-button type="primary" class="btn" @click="login">登录</el-button>
           <div class="btn reset" @click="reset">重置</div>
+          <a class="btn reset" href="/">返回首页</a>
         </div>
       </el-form>
     </div>
