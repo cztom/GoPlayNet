@@ -2,16 +2,16 @@
 
 This template should help get you started developing with Vue 3 in Vite.
 
-简单的登录鉴权
+使用Vue 3搭建的简单登录鉴权
 一共4个页面
 
-- 登录页
+- 登录页 (/account/login)
 
-- 首页（不需要登录）
+- 首页（不需要登录） (/)
 
-- 内页（需要判断登录状态，如果未登录，则跳转登录页）
+- 内页（需要判断登录状态，如果未登录，则跳转登录页） (/admin/user)
 
-- 登出页，登出后跳转首页
+- 登出页，登出后跳转首页 (/account/logout)
 
 ## Recommended IDE Setup
 
