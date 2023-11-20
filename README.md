@@ -2,6 +2,17 @@
 
 This template should help get you started developing with Vue 3 in Vite.
 
+简单的登录鉴权
+一共4个页面
+
+- 登录页
+
+- 首页（不需要登录）
+
+- 内页（需要判断登录状态，如果未登录，则跳转登录页）
+
+- 登出页，登出后跳转首页
+
 ## Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
